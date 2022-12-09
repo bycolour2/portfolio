@@ -8,7 +8,7 @@ import { Welcome } from '../pages/Welcome';
 
 export const Main = () => {
   return (
-    <main className="bg-black">
+    <main>
       <Routes>
         <Route path="/" element={<Welcome />} />
         <Route path="/about" element={<About />} />
