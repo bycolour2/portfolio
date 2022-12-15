@@ -1,3 +1,4 @@
+/* @import url('https://fonts.googleapis.com/css?family=Poppin'); */
 @tailwind base;
 
 * {
@@ -28,3 +29,14 @@
 
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins-Regular.ttf');
+}
+
+@layer base {
+  html {
+    font-family: Poppins, sans-serif;
+  }
+}

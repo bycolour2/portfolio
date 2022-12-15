@@ -23,7 +23,7 @@ export const NavBar = () => {
             </NavLink>
           </li>
           <li className="p-2 text-lg font-medium text-gray-500 hover:text-gray-700">
-            <NavLink to={'/tech'} className="drop-shadow-md">
+            <NavLink to={'/technologies'} className="drop-shadow-md">
               Tech stack
             </NavLink>
           </li>
