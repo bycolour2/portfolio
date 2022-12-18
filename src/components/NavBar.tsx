@@ -5,9 +5,8 @@ import { Socials } from './Socials';
 export const NavBar = () => {
   return (
     <header className="container mx-auto flex max-w-[70%] justify-between py-4">
-      <div className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+      <div className="flex flex-col items-center justify-center bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
         <span className="text-3xl font-bold">{'{696}'}</span>
-        <br />
         <span className="text-lg font-bold">bycolour</span>
       </div>
       <nav className="flex flex-row items-center justify-center gap-12">

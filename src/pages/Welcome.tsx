@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import SimpleAvatar from './../assets/images/SimpleAvatar.png';
+import { personalDetails } from '../Details';
 
 export const Welcome = () => {
   const [pageLoaded, setPageLoaded] = useState(false);
@@ -42,14 +42,14 @@ export const Welcome = () => {
             !pageLoaded ? '-translate-x-72 opacity-0' : 'translate-x-0 opacity-100'
           } delay-700 duration-1000 ease-in-out`}
         >
-          Rustam
+          {personalDetails.name}
         </h1>
         <h1
           className={`mb-2 ${
             !pageLoaded ? '-translate-x-72 opacity-0' : 'translate-x-0 opacity-100'
           } delay-[1400ms] duration-1000 ease-in-out`}
         >
-          I build things for web
+          {personalDetails.tagline}
         </h1>
       </div>
       <div
@@ -57,7 +57,7 @@ export const Welcome = () => {
           !pageLoaded ? 'translate-x-72 opacity-0' : 'translate-x-0 opacity-100'
         } duration-[2000ms] ease-in-out`}
       >
-        <img src={SimpleAvatar} alt="Me!" className="rounded-full bg-white" />
+        <img src={personalDetails.img} alt="Me!" className="rounded-full bg-white" />
       </div>
     </main>
   );
