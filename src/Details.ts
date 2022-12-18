@@ -182,3 +182,8 @@ export const contactDetails = {
   telegram: '@bycolour',
   phone: '',
 };
+
+// Enter Footer type here
+export const footerDetails = {
+  withNav: false,
+};
