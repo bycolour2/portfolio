@@ -21,7 +21,7 @@ export const Welcome = () => {
   }, []);
 
   return (
-    <main className="container mx-auto flex min-h-[calc(100vh-96px)] max-w-[70%] flex-row items-center justify-between bg-white pb-20">
+    <main className="container mx-auto flex min-h-[calc(100vh-96px-36px)] max-w-[70%] flex-row items-center justify-between bg-white pb-20">
       <div className="flex flex-col items-start justify-start text-5xl font-bold">
         <h1
           className={`mb-2 ${
