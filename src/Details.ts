@@ -29,6 +29,8 @@ import projectImage3 from './assets/projects/project3.jpg';
 import projectImage4 from './assets/projects/project4.jpg';
 import projectImage5 from './assets/projects/project5.jpg';
 import projectImage6 from './assets/projects/project6.jpg';
+// Certificates
+import RSSReactQ3Cert from './assets/pdfs/RSS React 2022 Q3 Cert.pdf';
 
 // Logos
 // export const logos = {
@@ -41,7 +43,7 @@ export const personalDetails = {
   name: 'Rustam',
   tagline: 'I build things for web',
   img: profile,
-  about: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
+  about: `I'm an enthusiastic and detail-oriented Frontend developer, highly motivated to writing clear, concise, robust code that works. I have passion for both personal growth and for software development.`,
 };
 
 // Enter your Social Media URLs here
@@ -55,43 +57,55 @@ export const socialMediaUrl = {
 // Enter your Work Experience here
 export const workDetails = [
   {
-    position: 'Frontend Web Developer',
-    company: `Company Name here`,
-    location: 'Bengaluru',
+    position:
+      'Senior specialist of User Support Department at Information Management Systems Directorate',
+    company: `Gazprom Procurement LLC`,
+    location: 'St. Petersburg',
     type: 'Full Time',
-    duration: 'Sep 2021 - Dec 2021',
+    duration: 'Aug 2020 - Present',
   },
   {
-    position: 'Internship',
-    company: `Company Name here`,
-    location: 'Bengaluru',
-    type: 'Internship',
-    duration: 'Sep 2021 - Dec 2021',
+    position: 'Technical Support Engineer 2nd and 3rd line ',
+    company: `Radario LLC`,
+    location: 'St. Petersburg',
+    type: 'Full Time',
+    duration: 'Sep 2016 - Apr 2017',
   },
   {
-    position: 'Internship',
-    company: `Company Name here`,
-    location: 'Bengaluru',
+    position: 'Intern in IT department',
+    company: `Gazprom Procurement LLC`,
+    location: 'Moscow',
     type: 'Internship',
-    duration: 'Sep 2021 - Dec 2021',
+    duration: 'Jul 2016 - Jul 2016',
   },
 ];
 
 // Enter your Education Details here
 export const educationDetails = [
   {
-    position: 'Frontend Development',
-    company: 'Udemy, YouTube, Google, Medium',
+    position: 'Courses: React 2022 Q3',
+    company: 'RS School',
     location: 'Online',
     type: 'Full Time',
-    duration: 'Jan 2022 - Present',
+    duration: 'Sep 2022 - Dec 2022',
+    certificate: RSSReactQ3Cert,
   },
   {
-    position: 'Bachelor in Electronics & Communication',
-    company: `Your College Name here`,
-    location: 'Bengaluru',
+    position: "Master's Degree in Web Development (Faculty of Software Engineering)",
+    company: `ITMO University`,
+    location: 'St. Petersburg',
     type: 'Full Time',
-    duration: 'Aug 2020 - Present',
+    duration: 'Sep 2019 - Jul 2021',
+    certificate: '',
+  },
+  {
+    position:
+      "Bachelor's Degree in Applied Informatics in Economics (Faculty of Information Technology and Programming)",
+    company: `ITMO University`,
+    location: 'St. Petersburg',
+    type: 'Full Time',
+    duration: 'Sep 2015 - Aug 2017',
+    certificate: '',
   },
 ];
 
