@@ -196,7 +196,7 @@ project lorem ipsum generator for dummy content`,
 export const contactDetails = {
   email: 'ruskir7@gmail.com',
   telegram: '@bycolour',
-  phone: '123',
+  phone: '',
 };
 
 // Enter Footer type here

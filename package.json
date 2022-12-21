@@ -1,7 +1,7 @@
 {
   "name": "vite-reactts-eslint-prettier-bycolour-portfolio",
   "version": "0.0.0",
-  "homepage": "https://<username>.github.io/<repo>/",
+  "homepage": "https://bycolour2.github.io/portfolio/",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
