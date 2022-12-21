@@ -21,8 +21,8 @@ export const Welcome = () => {
   }, []);
 
   return (
-    <main className="container mx-auto flex min-h-[calc(100vh-96px-36px)] max-w-[70%] flex-row items-center justify-between bg-white pb-20">
-      <div className="flex flex-col items-start justify-start text-5xl font-bold">
+    <div className="flex h-full flex-col items-center justify-between gap-12 bg-white pt-12 md:flex-row md:pt-28 2xl:justify-around">
+      <div className="flex flex-col items-start justify-start text-2xl font-bold lg:text-4xl xl:text-5xl">
         <h1
           className={`mb-2 ${
             !pageLoaded ? '-translate-x-72 opacity-0' : 'translate-x-0 opacity-100'
@@ -53,12 +53,12 @@ export const Welcome = () => {
         </h1>
       </div>
       <div
-        className={`w-[250px] rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 p-1 ${
+        className={`w-[200px] rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 p-1 lg:w-[250px] ${
           !pageLoaded ? 'translate-x-72 opacity-0' : 'translate-x-0 opacity-100'
         } duration-[2000ms] ease-in-out`}
       >
         <img src={personalDetails.img} alt="Me!" className="rounded-full bg-white" />
       </div>
-    </main>
+    </div>
   );
 };

@@ -1,18 +1,12 @@
-import {
-  FaDiscord,
-  FaGithub,
-  FaInstagram,
-  FaLinkedin,
-  FaTelegram,
-  FaTwitter,
-} from 'react-icons/fa';
+import { FaDiscord, FaGithub, FaLinkedin, FaTelegram } from 'react-icons/fa';
 
-import GitHub from '../assets/svg/GitHub.svg';
-import LinkedIn from '../assets/svg/LinkedIn.svg';
-import Twitter from '../assets/svg/Twitter.svg';
 import { socialMediaUrl } from '../Details';
 
-export const Socials = () => {
+interface ISocials {
+  size?: number;
+}
+
+export const Socials = ({ size = 32 }: ISocials) => {
   return (
     <div className="flex flex-row items-center gap-4 text-gray-500">
       <a
@@ -21,7 +15,7 @@ export const Socials = () => {
         rel="noreferrer"
         className="hover:text-gray-700"
       >
-        <FaGithub size={32} className="hover:drop-shadow-md" />
+        <FaGithub size={size} className="hover:drop-shadow-md" />
       </a>
       <a
         href={socialMediaUrl.discord}
@@ -29,7 +23,7 @@ export const Socials = () => {
         rel="noreferrer"
         className="hover:text-gray-700"
       >
-        <FaDiscord size={32} className="hover:drop-shadow-md" />
+        <FaDiscord size={size} className="hover:drop-shadow-md" />
       </a>
       <a
         href={socialMediaUrl.telegram}
@@ -37,10 +31,10 @@ export const Socials = () => {
         rel="noreferrer"
         className="hover:text-gray-700"
       >
-        <FaTelegram size={32} className="hover:drop-shadow-md" />
+        <FaTelegram size={size} className="hover:drop-shadow-md" />
       </a>
       {/* <a href={socialMediaUrl.linkdein} target="_blank" rel="noreferrer" className="hover:text-gray-700">
-        <FaLinkedin size={32} className="hover:drop-shadow-md" />
+        <FaLinkedin size={size} className="hover:drop-shadow-md" />
       </a> */}
     </div>
   );

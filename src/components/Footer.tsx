@@ -5,10 +5,10 @@ import { Socials } from './Socials';
 
 export const Footer = () => {
   return (
-    <footer className="flex w-full flex-col justify-center bg-white">
+    <footer className="flex w-full flex-col justify-center">
       {!footerDetails.withNav ? (
-        <div className="mx-auto w-[70%]">
-          <div className="flex flex-row items-center justify-center py-2 text-sm">
+        <div className="mx-auto max-w-[80%] lg:max-w-[70%]">
+          <div className="flex flex-row items-center justify-center py-2 text-center text-xs md:text-left lg:text-sm">
             <p>
               Designed by{' '}
               <a

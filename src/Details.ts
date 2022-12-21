@@ -183,6 +183,8 @@ project lorem ipsum generator for dummy content`,
     title: 'Project title 6',
     image: projectImage6,
     description: `This is sample project description random things are here in description This is sample
+project lorem ipsum generator for dummy content. This is sample project description random things are here in description This is sample
+project lorem ipsum generator for dummy content. This is sample project description random things are here in description This is sample
 project lorem ipsum generator for dummy content`,
     techstack: 'HTML/CSS, JavaScript',
     previewLink: 'https://google.com',
@@ -194,7 +196,7 @@ project lorem ipsum generator for dummy content`,
 export const contactDetails = {
   email: 'ruskir7@gmail.com',
   telegram: '@bycolour',
-  phone: '',
+  phone: '123',
 };
 
 // Enter Footer type here
