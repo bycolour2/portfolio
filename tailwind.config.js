@@ -2,7 +2,11 @@
 module.exports = {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+      },
+    },
   },
-  plugins: [require('prettier-plugin-tailwindcss')],
+  plugins: [require('prettier-plugin-tailwindcss'), require('@tailwindcss/line-clamp')],
 };

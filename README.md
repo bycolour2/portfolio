@@ -1,37 +1,54 @@
-# Vite + React + Typescript + Eslint + Prettier
+# React Developer Portfolio template
+#### Live Demo
+#### Figma Design https://www.figma.com/community/file/1116246660507537002
 
-A starter for React with Typescript with the fast Vite and all static code testing with Eslint and formatting with Prettier.
+## Follow Below instructions to add your deatils in the portfolio.
 
-![Vite + React + Typescript + Eslint + Prettier](/resources/screenshot.png)
+### Change and customize every section according to your need, All you need to do is edit `/src/Details.js`
 
-I found out about Vite and I wanted to have a boilerplate for the technologies that I use. You can find more about these in the following links: [Vite](https://github.com/vitejs/vite), [React](https://reactjs.org/), [Typescript](https://www.typescriptlang.org/), [Eslint](https://eslint.org/), [Prettier](https://prettier.io/).
+#### Open `/src/Details.js` & modify it as per your need.
 
-## Installation
+```javascript
+/ Enter your Personal Details here
+export const personalDetails = {
+  name: 'Rustam',
+  tagline: 'I build things for web',
+  img: profile,
+  about: `I'm an enthusiastic and detail-oriented Frontend developer, highly motivated to writing clear, concise, robust code that works. I have passion for both personal growth and for software development.`,
+};
 
-Clone the repo and run `yarn install`
+// Enter your Social Media URLs here
+export const socialMediaUrl = {
+  github: 'https://www.github.com/bycolour2',
+  discord: 'https://discordapp.com/users/135416426369515520',
+  telegram: 'https://t.me/bycolour',
+  linkdein: '',
+};
 
-or Run command
+// Enter your Work Experience here
+export const workDetails = [
+  {
+    position:
+      'Senior specialist of User Support Department at Information Management Systems Directorate',
+    company: `Gazprom Procurement LLC`,
+    location: 'St. Petersburg',
+    type: 'Full Time',
+    duration: 'Aug 2020 - Present',
+  }
+];
 
+// Enter your Education Details here
+export const educationDetails = [ ... ];
+
+// Tech Stack
+export const techStackDetails = { ... };
+
+// Tools
+export const toolsDetails = { ... };
+
+// Enter your Project Details here
+export const projectDetails = [ ... ];
+
+// Enter your Contact Details here
+export const contactDetails = { ... };
 ```
-npx degit TheSwordBreaker/vite-reactts-eslint-prettier project-name
-```
-
-## Start
-
-After the successfull installation of the packages: `yarn dev`
-
-## Steps in Vscode
-
-#### (works with better with this template)
-
-1. Install Eslint and prettier extension for vs code.
-2. Make Sure Both are enabled
-3. Make sure all packages are Installed. (Mostly Eslint and prettier in node_modules)
-4. Enable formatOnSave of vs code
-5. Open a .tsx file and check if the bottom right corners of vs code have Eslint and Prettier with a double tick
-
-![Screenshot (253)_LI](https://user-images.githubusercontent.com/52120562/162486286-7383a737-d555-4f9b-a4dd-c4a81deb7b96.jpg)
-
-If Everything is Good Then It Should Work, but let me new if something else happens
-
-Made with ❤️ by theSwordBreaker(we Destory all types of sword ⚡)
