@@ -57,7 +57,11 @@ export const Welcome = () => {
           !pageLoaded ? 'translate-x-72 opacity-0' : 'translate-x-0 opacity-100'
         } duration-[2000ms] ease-in-out`}
       >
-        <img src={personalDetails.img} alt="Me!" className="rounded-full bg-white" />
+        <img
+          src={personalDetails.img}
+          alt="Me!"
+          className="aspect-square rounded-full object-cover object-right"
+        />
       </div>
     </div>
   );

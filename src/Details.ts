@@ -4,7 +4,7 @@
 // import logogradient from './assets/logo.svg';
 // import logo from './assets/logo2.svg';
 // Profile Image
-import profile from './assets/images/SimpleAvatar.png';
+import profile from './assets/images/Me.jpg';
 // Tech stack images
 import HTML5 from './assets/images/HTML5-logo.png';
 import CSS3 from './assets/images/CSS3-logo.png';
