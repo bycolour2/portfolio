@@ -4,11 +4,12 @@ import { socialMediaUrl } from '../Details';
 
 interface ISocials {
   size?: number;
+  socialColorClass?: string;
 }
 
-export const Socials = ({ size = 32 }: ISocials) => {
+export const Socials = ({ size = 32, socialColorClass = 'text-gray-500' }: ISocials) => {
   return (
-    <div className="flex flex-row items-center gap-4 text-gray-500">
+    <div className={`flex flex-row items-center gap-4 ${socialColorClass}`}>
       <a
         href={socialMediaUrl.github}
         target="_blank"

@@ -1,4 +1,5 @@
 import { FaGithub, FaLink } from 'react-icons/fa';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 interface IProject {
   image: string;
@@ -19,7 +20,12 @@ export const Project = ({
 }: IProject) => {
   return (
     <article className="flex flex-col justify-start overflow-hidden rounded-xl shadow-xl shadow-slate-300">
-      <img src={image} alt={title} loading="lazy" />
+      <LazyLoadImage
+        src={image}
+        alt={title}
+        effect="blur"
+        className="h-60 w-full object-cover"
+      />
       <div className="flex grow flex-col justify-between gap-3 p-4">
         <div>
           <h2 className="text-lg font-semibold text-gray-700">{title}</h2>
@@ -28,9 +34,9 @@ export const Project = ({
           </p>
         </div>
         <div>
-          <p className="font-semibold">
-            Tech stack:{' '}
-            <span className="text-base font-light text-gray-500">{techstack}</span>
+          <p className="text-sm text-gray-500 line-clamp-3">
+            <span className="font-semibold text-gray-700">Tech stack: </span>
+            <span className="font-light text-gray-500">{techstack}</span>
           </p>
           <div className="flex flex-row items-center justify-between pt-4">
             <div className="flex flex-row items-center gap-2 text-gray-700">

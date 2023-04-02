@@ -8,7 +8,7 @@ import { Welcome } from '../pages/Welcome';
 
 export const Main = () => {
   return (
-    <main className="container mx-auto min-h-[calc(100vh-80px-32px)] max-w-[80%] bg-white pt-12 pb-20 lg:min-h-[calc(100vh-96px-36px)] lg:max-w-[70%] lg:pt-16">
+    <main className="min-h-[calc(100vh-81px-32px)] w-full bg-white px-10 py-4 lg:container lg:mx-auto lg:min-h-[calc(100vh-97px-36px)] lg:max-w-[80%]">
       <Routes>
         <Route path="/" element={<Welcome />} />
         <Route path="/about" element={<About />} />

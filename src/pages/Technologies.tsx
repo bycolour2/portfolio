@@ -1,3 +1,5 @@
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 import { techStackDetails, toolsDetails } from '../Details';
 
 export const Technologies = () => {
@@ -10,14 +12,13 @@ export const Technologies = () => {
         </p>
         <div className="mt-12 mb-8 grid grid-cols-3 gap-8 md:grid-cols-5 lg:grid-cols-6">
           {Object.keys(techStackDetails).map((key) => {
-            const title =
-              key.toString().charAt(0).toUpperCase() + key.toString().slice(1);
             return (
-              <img
+              <LazyLoadImage
                 key={key}
                 src={techStackDetails[key as keyof typeof techStackDetails]}
                 alt={key}
-                title={title}
+                title={key.toString().charAt(0).toUpperCase() + key.toString().slice(1)}
+                effect="blur"
                 className="aspect-square object-scale-down p-2"
               />
             );
@@ -31,11 +32,12 @@ export const Technologies = () => {
             const title =
               key.toString().charAt(0).toUpperCase() + key.toString().slice(1);
             return (
-              <img
+              <LazyLoadImage
                 key={key}
                 src={toolsDetails[key as keyof typeof toolsDetails]}
                 alt={key}
                 title={title}
+                effect="blur"
                 className="aspect-square object-scale-down p-2"
               />
             );

@@ -23,9 +23,9 @@ import GitHub from './assets/images/github-logo.png';
 import Npm from './assets/images/Npm-logo.png';
 import Postman from './assets/images/postman-logo.png';
 // Porject Images
-import projectImage1 from './assets/projects/project1.jpg';
-import projectImage2 from './assets/projects/project2.jpg';
-import projectImage3 from './assets/projects/project3.jpg';
+import projectImage1 from './assets/projects/convertingInput.png';
+import projectImage2 from './assets/projects/rocket-pma.png';
+import projectImage3 from './assets/projects/portfolio.png';
 import projectImage4 from './assets/projects/project4.jpg';
 import projectImage5 from './assets/projects/project5.jpg';
 import projectImage6 from './assets/projects/project6.jpg';
@@ -57,12 +57,19 @@ export const socialMediaUrl = {
 // Enter your Work Experience here
 export const workDetails = [
   {
+    position: 'Senior Specialist of the IMS Development and Implementation Department',
+    company: `Gazprom Procurement LLC`,
+    location: 'St. Petersburg',
+    type: 'Full Time',
+    duration: 'Feb 2023 - Present',
+  },
+  {
     position:
       'Senior specialist of User Support Department at Information Management Systems Directorate',
     company: `Gazprom Procurement LLC`,
     location: 'St. Petersburg',
     type: 'Full Time',
-    duration: 'Aug 2020 - Present',
+    duration: 'Aug 2020 - Jan 2023',
   },
   {
     position: 'Technical Support Engineer 2nd and 3rd line ',
@@ -135,31 +142,31 @@ export const toolsDetails = {
 // Enter your Project Details here
 export const projectDetails = [
   {
-    title: 'Project title 1',
+    title: 'Converting input',
     image: projectImage1,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
-    techstack: 'HTML/CSS, JavaScript',
-    previewLink: 'https://google.com',
-    githubLink: 'https://github.com',
+    description: `Converting input that could be toggled from metric to imperial system.
+      Example of use: server main system is metric but users across the globe and for some users
+      imperial is thier main system.`,
+    techstack: 'React, TypeScript, Vite, Tailwindcss',
+    previewLink: 'https://bycolour2.github.io/convertingInput/',
+    githubLink: 'https://github.com/bycolour2/convertingInput/',
   },
   {
-    title: 'Project title 2',
+    title: 'Rocket project management app',
     image: projectImage2,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
-    techstack: 'HTML/CSS, JavaScript',
-    previewLink: 'https://google.com',
-    githubLink: 'https://github.com',
+    description: `Project management system created as final task for RSSchool course. Application uses React-router-dom, redux, websocket, drag and drop and other simplier technologies.`,
+    techstack:
+      'React, TypeScript, CRA, Tailwindcss, Redux, RTK, Websocket, Pangea-DnD (ex. Beautiful DnD), RRD, Flowbite',
+    previewLink: 'https://rocket-pma.onrender.com/',
+    githubLink: 'https://github.com/bycolour2/project-management-app',
   },
   {
-    title: 'Project title 3',
+    title: 'Portfolio',
     image: projectImage3,
-    description: `This is sample project description random things are here in description This is sample
-project lorem ipsum generator for dummy content`,
-    techstack: 'HTML/CSS, JavaScript',
-    previewLink: 'https://google.com',
-    githubLink: 'https://github.com',
+    description: `My portfolio, as you can see :)`,
+    techstack: 'React, TypeScript, Vite, Tailwindcss, Framer Motion',
+    previewLink: 'https://bycolour2.github.io/portfolio/',
+    githubLink: 'https://github.com/bycolour2/portfolio',
   },
   {
     title: 'Project title 4',
